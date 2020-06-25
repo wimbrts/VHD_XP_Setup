@@ -1,0 +1,26 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_9005&DEV_0285&SUBSYS_02911028]
+"ClassGUID"="{4d36e97b-e325-11ce-bfc1-08002be10318}"
+"Service"="cercsr6"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\cercsr6]
+"ErrorControl"=dword:00000001
+"Start"=dword:00000003
+"Type"=dword:00000001
+"Group"="SCSI miniport"
+"DisplayName"="DELL CERC SATA 1.5/6ch RAID Miniport Driver"
+"ImagePath"=hex(2):53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,44,00,\
+  52,00,49,00,56,00,45,00,52,00,53,00,5c,00,63,00,65,00,72,00,63,00,73,00,72,\
+  00,36,00,2e,00,73,00,79,00,73,00,00,00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\cercsr6\Parameters]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\cercsr6\Parameters\Device]
+"NumberOfRequests"=dword:000000fe
+"UncachedExtAlignment"=dword:0000000e
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\cercsr6\Parameters\PnpInterface]
+"5"=dword:00000001

@@ -1,0 +1,29 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_8086&DEV_2682&SUBSYS_31F6103C]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="aarahci"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_8086&DEV_2822&SUBSYS_31F4103C]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="aarahci"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_8086&DEV_2822&SUBSYS_3206103C]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="aarahci"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\aarahci]
+"ErrorControl"=dword:00000001
+"Start"=dword:00000003
+"Type"=dword:00000001
+"Group"="SCSI Miniport"
+"ImagePath"=hex(2):53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,44,00,\
+  52,00,49,00,56,00,45,00,52,00,53,00,5c,00,61,00,61,00,72,00,61,00,68,00,63,\
+  00,69,00,2e,00,73,00,79,00,73,00,00,00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\aarahci\Parameters]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\aarahci\Parameters\PnpInterface]
+"5"=dword:00000001

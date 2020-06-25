@@ -1,0 +1,45 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3112&SUBSYS_02509005]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="ASH1205"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3512&SUBSYS_34238086]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="ASH1205"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\ASH1205]
+"ErrorControl"=dword:00000001
+"Start"=dword:00000003
+"Type"=dword:00000001
+"Group"="Scsi miniport"
+"DisplayName"="SiI-3512 SATALink Controller"
+"ImagePath"=hex(2):53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,44,00,\
+  52,00,49,00,56,00,45,00,52,00,53,00,5c,00,41,00,53,00,48,00,31,00,32,00,30,\
+  00,35,00,2e,00,73,00,79,00,73,00,00,00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\ASH1205\Parameters]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\ASH1205\Parameters\PnPInterface]
+"5"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\ASH1205\ProblemDevices]
+@=""
+"Maxtor 4D060H3                          DAK05GK0"="MaxMode = UDMA-5"
+"ST320012AS"="Mod15Write"
+"ST330013AS"="Mod15Write"
+"ST340017AS"="Mod15Write"
+"ST360015AS"="Mod15Write"
+"ST380023AS"="Mod15Write"
+"ST3120023AS"="Mod15Write"
+"ST340014ASL"="Mod15Write"
+"ST360014ASL"="Mod15Write"
+"ST380011ASL"="Mod15Write"
+"ST3120022ASL"="Mod15Write"
+"ST3160021ASL"="Mod15Write"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\ASH1205\SupportedSubsystemIDs]
+"Silicon Image SiI 3512 SATALink Controller"=dword:35121095
+"Adaptec Serial ATA 1205SA Host Controller"=dword:02509005

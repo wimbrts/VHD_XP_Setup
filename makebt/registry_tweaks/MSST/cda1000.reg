@@ -1,0 +1,44 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_9004&DEV_7378]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="cda1000"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_9004&DEV_7815]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="cda1000"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_9004&DEV_7893]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="cda1000"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_9004&DEV_7895]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="cda1000"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_9004&DEV_8378]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="cda1000"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_9005&DEV_0013]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="cda1000"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_9005&DEV_0053]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="cda1000"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_9005&DEV_00c3]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="cda1000"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\cda1000]
+"ErrorControl"=dword:00000001
+"Start"=dword:00000003
+"Type"=dword:00000001
+"Group"="SCSI Miniport"
+"ImagePath"=hex(2):53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,44,00,\
+  52,00,49,00,56,00,45,00,52,00,53,00,5c,00,63,00,64,00,61,00,31,00,30,00,30,\
+  00,30,00,2e,00,73,00,79,00,73,00,00,00

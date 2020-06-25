@@ -1,0 +1,138 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_8086&DEV_24DF&CC_0104]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="iaStor"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_8086&DEV_25B0&CC_0104]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="iaStor"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_8086&DEV_2652&CC_0106]
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+"Service"="iaStor"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_8086&DEV_2653&CC_0106]
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+"Service"="iaStor"
+
+; **    Filename:  iaAHCI.INF
+; **    Revision:  Version 11.2.0.1006
+; **    Date:      05/30/2012
+
+; iaStor.sys  Intel ICH9/ICH10 SATA AHCI/RAID Controller - Version 10.0.0.1046  currently beta, but WHQL signed
+;
+; CriticalDeviceDatabase entries were derived from iaAHCI.inf for Intel AHCI Controller (ending on cc_0106)
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&dev_2681&cc_0106]
+"Service"="iaStor"
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&dev_27C1&cc_0106]
+"Service"="iaStor"
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&dev_27C5&cc_0106]
+"Service"="iaStor"
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&dev_2821&cc_0106]
+"Service"="iaStor"
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&dev_2829&cc_0106]
+"Service"="iaStor"
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&dev_2922&cc_0106]
+"Service"="iaStor"
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&dev_2929&cc_0106]
+"Service"="iaStor"
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&dev_3A02&cc_0106]
+"Service"="iaStor"
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&dev_3A22&cc_0106]
+"Service"="iaStor"
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&dev_3B22&cc_0106]
+"Service"="iaStor"
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&dev_3B29&cc_0106]
+"Service"="iaStor"
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&dev_3B2F&cc_0106]
+"Service"="iaStor"
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&DEV_1C02&CC_0106]
+"Service"="iaStor"
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&DEV_1C03&CC_0106]
+"Service"="iaStor"
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&DEV_1E02&CC_0106]
+"Service"="iaStor"
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&DEV_1E03&CC_0106]
+"Service"="iaStor"
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+
+
+; **    Filename:  iaStor.INF
+; **    Revision:  Version 11.2.0.1006
+; **    Date:      05/30/2012
+; CriticalDeviceDatabase entries were derived from iaStor.inf for Intel RAID Controller (ending on cc_0104)
+
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&DEV_2652&CC_0104]
+"Service"="iaStor"
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&DEV_2682&CC_0104]
+"Service"="iaStor"
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&DEV_27C3&CC_0104]
+"Service"="iaStor"
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&DEV_27C6&CC_0104]
+"Service"="iaStor"
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&DEV_2822&CC_0104]
+"Service"="iaStor"
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\pci#ven_8086&DEV_282A&CC_0104]
+"Service"="iaStor"
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+
+
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\iaStor]
+"ErrorControl"=dword:00000001
+"Start"=dword:00000000
+"Type"=dword:00000001
+"Group"="SCSI Miniport"
+"DisplayName"="Intel AHCI Controller"
+"ImagePath"=hex(2):53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,44,00,\
+  52,00,49,00,56,00,45,00,52,00,53,00,5c,00,69,00,61,00,53,00,74,00,6f,00,72,\
+  00,2e,00,73,00,79,00,73,00,00,00
+"Tag"=dword:00000019
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\iaStor\Parameters]
+"queuePriorityEnable"=dword:00000000
