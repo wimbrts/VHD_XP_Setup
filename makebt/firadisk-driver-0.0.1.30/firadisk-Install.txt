@@ -1,0 +1,5 @@
+Install FiraDisk driver via Right click on firadisk.inf and Select Install
+
+Install FiraDisk from command window is also possible via
+
+RUNDLL32.EXE SETUPAPI.DLL,InstallHinfSection DefaultInstall 132 H:\firadisk\firadisk.inf

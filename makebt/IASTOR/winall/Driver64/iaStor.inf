@@ -1,0 +1,222 @@
+; Copyright (c) 2003-09 Intel Corporation
+; ****************************************************************************
+; ****************************************************************************
+; **    Filename:  iaStor.INF
+; **    Revision:  Version 8.9.0.1023
+; **    Date:      06/04/2009
+; **    Abstract:  Windows* INF File for Intel(R) Matrix Storage Manager Driver
+; ****************************************************************************
+; ****************************************************************************
+
+[version]
+CatalogFile=iaStor.cat
+Signature="$WINDOWS NT$"
+Class=SCSIAdapter
+ClassGUID={4D36E97B-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+DriverVer=06/04/2009,8.9.0.1023
+
+[SourceDisksNames]
+1 = %DiskName%,,,
+
+[SourceDisksFiles]
+iaStor.sys= 1
+
+[DestinationDirs]
+DefaultDestDir = 12 ; DIRID_DRIVERS
+CopyFullPort = 12;
+
+[CopyFullPort]
+iaStor.sys
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL_HDC,ntamd64
+
+[INTEL_HDC]
+
+[INTEL_HDC.ntamd64]
+%PCI\VEN_8086&DEV_2682&CC_0104.DeviceDesc% = iaStor_Inst_RAID, PCI\VEN_8086&DEV_2682&CC_0104
+%PCI\VEN_8086&DEV_27C3&CC_0104.DeviceDesc% = iaStor_Inst_RAID, PCI\VEN_8086&DEV_27C3&CC_0104
+%PCI\VEN_8086&DEV_27C6&CC_0104.DeviceDesc% = iaStor_mobl_Inst_RAID, PCI\VEN_8086&DEV_27C6&CC_0104
+%PCI\VEN_8086&DEV_2822&CC_0104.DeviceDesc% = iaStor_Inst_RAID, PCI\VEN_8086&DEV_2822&CC_0104
+%PCI\VEN_8086&DEV_282A&CC_0104.DeviceDesc% = iaStor_mobl_Inst_RAID, PCI\VEN_8086&DEV_282A&CC_0104
+
+;****************************************************
+[iaStor_Inst_RAID]
+AddReg = iaStor_Temp_parameters_AddReg
+CopyFiles=CopyFullPort
+FeatureScore=0x80
+
+[iaStor_mobl_Inst_RAID]
+AddReg = iaStor_Temp_parameters_AddReg
+CopyFiles=CopyFullPort
+FeatureScore=0x80
+
+[iaStor_Inst_RAID.HW]
+AddReg = iaStorSecurity.AddReg
+
+[iaStor_mobl_Inst_RAID.HW]
+AddReg = iaStorSecurity.AddReg
+
+[iaStorSecurity.AddReg]
+HKR,,Security,,"D:P(A;;FA;;;SY)(A;;FA;;;BA)(A;;FRFW;;;BU)"
+
+[iaStor_Temp_parameters_AddReg]
+
+[iaStor_Inst_RAID.Services]
+AddService = iaStor, %SPSVCINST_ASSOCSERVICE%, iaStor_Service_Inst, iaStor_EventLog_Inst
+
+[iaStor_mobl_Inst_RAID.Services]
+AddService = iaStor, %SPSVCINST_ASSOCSERVICE%, iaStor_mobl_Service_Inst, iaStor_EventLog_Inst
+
+[iaStor_Service_Inst]
+DisplayName    = %*PNP0600.DeviceDesc%
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_BOOT_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %12%\iaStor.sys
+LoadOrderGroup = SCSI Miniport
+AddReg         = iaStor_parameters_AddReg
+
+[iaStor_mobl_Service_Inst]
+DisplayName    = %*PNP0600.DeviceDesc%
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_BOOT_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %12%\iaStor.sys
+LoadOrderGroup = SCSI Miniport
+AddReg         = iaStor_mobl_parameters_AddReg
+
+[iaStor_parameters_AddReg]
+HKR,,Tag,%REG_DWORD%,25
+HKR,Parameters,queuePriorityEnable,%REG_DWORD%,0
+HKR,Parameters,BusType,0x00010001,0x0000008
+
+HKR,Parameters\Port0,%AN%,0x00010001,0
+HKR,Parameters\Port0,%LPM%,0x00010001,0
+HKR,Parameters\Port0,%LPMSTATE%,0x00010001,0
+HKR,Parameters\Port0,%LPMDSTATE%,0x00010001,1
+HKR,Parameters\Port0,%GTF%,0x00010001,0
+HKR,Parameters\Port0,%DIPM%,0x00010001,0
+
+HKR,Parameters\Port1,%AN%,0x00010001,0
+HKR,Parameters\Port1,%LPM%,0x00010001,0
+HKR,Parameters\Port1,%LPMSTATE%,0x00010001,0
+HKR,Parameters\Port1,%LPMDSTATE%,0x00010001,1
+HKR,Parameters\Port1,%GTF%,0x00010001,0
+HKR,Parameters\Port1,%DIPM%,0x00010001,0
+
+HKR,Parameters\Port2,%AN%,0x00010001,0
+HKR,Parameters\Port2,%LPM%,0x00010001,0
+HKR,Parameters\Port2,%LPMSTATE%,0x00010001,0
+HKR,Parameters\Port2,%LPMDSTATE%,0x00010001,1
+HKR,Parameters\Port2,%GTF%,0x00010001,0
+HKR,Parameters\Port2,%DIPM%,0x00010001,0
+
+HKR,Parameters\Port3,%AN%,0x00010001,0
+HKR,Parameters\Port3,%LPM%,0x00010001,0
+HKR,Parameters\Port3,%LPMSTATE%,0x00010001,0
+HKR,Parameters\Port3,%LPMDSTATE%,0x00010001,1
+HKR,Parameters\Port3,%GTF%,0x00010001,0
+HKR,Parameters\Port3,%DIPM%,0x00010001,0
+
+HKR,Parameters\Port4,%AN%,0x00010001,0
+HKR,Parameters\Port4,%LPM%,0x00010001,0
+HKR,Parameters\Port4,%LPMSTATE%,0x00010001,0
+HKR,Parameters\Port4,%LPMDSTATE%,0x00010001,1
+HKR,Parameters\Port4,%GTF%,0x00010001,0
+HKR,Parameters\Port4,%DIPM%,0x00010001,0
+
+HKR,Parameters\Port5,%AN%,0x00010001,0
+HKR,Parameters\Port5,%LPM%,0x00010001,0
+HKR,Parameters\Port5,%LPMSTATE%,0x00010001,0
+HKR,Parameters\Port5,%LPMDSTATE%,0x00010001,1
+HKR,Parameters\Port5,%GTF%,0x00010001,0
+HKR,Parameters\Port5,%DIPM%,0x00010001,0
+
+[iaStor_mobl_parameters_AddReg]
+HKR,,Tag,%REG_DWORD%,25
+HKR,Parameters,queuePriorityEnable,%REG_DWORD%,0
+HKR,Parameters,BusType,0x00010001,0x0000008
+
+HKR,Parameters\Port0,%AN%,0x00010001,0
+HKR,Parameters\Port0,%LPM%,0x00010001,1
+HKR,Parameters\Port0,%LPMSTATE%,0x00010001,0
+HKR,Parameters\Port0,%LPMDSTATE%,0x00010001,1
+HKR,Parameters\Port0,%GTF%,0x00010001,0
+HKR,Parameters\Port0,%DIPM%,0x00010001,1
+
+HKR,Parameters\Port1,%AN%,0x00010001,0
+HKR,Parameters\Port1,%LPM%,0x00010001,1
+HKR,Parameters\Port1,%LPMSTATE%,0x00010001,0
+HKR,Parameters\Port1,%LPMDSTATE%,0x00010001,1
+HKR,Parameters\Port1,%GTF%,0x00010001,0
+HKR,Parameters\Port1,%DIPM%,0x00010001,1
+
+HKR,Parameters\Port2,%AN%,0x00010001,0
+HKR,Parameters\Port2,%LPM%,0x00010001,1
+HKR,Parameters\Port2,%LPMSTATE%,0x00010001,0
+HKR,Parameters\Port2,%LPMDSTATE%,0x00010001,1
+HKR,Parameters\Port2,%GTF%,0x00010001,0
+HKR,Parameters\Port2,%DIPM%,0x00010001,1
+
+HKR,Parameters\Port3,%AN%,0x00010001,0
+HKR,Parameters\Port3,%LPM%,0x00010001,1
+HKR,Parameters\Port3,%LPMSTATE%,0x00010001,0
+HKR,Parameters\Port3,%LPMDSTATE%,0x00010001,1
+HKR,Parameters\Port3,%GTF%,0x00010001,0
+HKR,Parameters\Port3,%DIPM%,0x00010001,1
+
+HKR,Parameters\Port4,%AN%,0x00010001,0
+HKR,Parameters\Port4,%LPM%,0x00010001,1
+HKR,Parameters\Port4,%LPMSTATE%,0x00010001,0
+HKR,Parameters\Port4,%LPMDSTATE%,0x00010001,1
+HKR,Parameters\Port4,%GTF%,0x00010001,0
+HKR,Parameters\Port4,%DIPM%,0x00010001,1
+
+HKR,Parameters\Port5,%AN%,0x00010001,0
+HKR,Parameters\Port5,%LPM%,0x00010001,1
+HKR,Parameters\Port5,%LPMSTATE%,0x00010001,0
+HKR,Parameters\Port5,%LPMDSTATE%,0x00010001,1
+HKR,Parameters\Port5,%GTF%,0x00010001,0
+HKR,Parameters\Port5,%DIPM%,0x00010001,1
+
+[iaStor_EventLog_Inst]
+AddReg = iaStor_EventLog_AddReg
+
+[iaStor_EventLog_AddReg]
+HKR,,EventMessageFile,%REG_EXPAND_SZ%,"%SystemRoot%\System32\IoLogMsg.dll;%SystemRoot%\System32\drivers\iaStor.sys"
+HKR,,TypesSupported,%REG_DWORD%,7
+
+;********************************************************
+; Extra Registry Entries
+
+[Strings]
+;Localizable
+DiskName                                    = "Intel Matrix Storage Manager Driver"
+*PNP0600.DeviceDesc                         = "Intel RAID Controller"
+PCI\VEN_8086&DEV_2682&CC_0104.DeviceDesc    = "Intel(R) ESB2 SATA RAID Controller"
+PCI\VEN_8086&DEV_27C3&CC_0104.DeviceDesc    = "Intel(R) ICH7R/DH SATA RAID Controller"
+PCI\VEN_8086&DEV_27C6&CC_0104.DeviceDesc    = "Intel(R) ICH7MDH SATA RAID Controller"
+PCI\VEN_8086&DEV_2822&CC_0104.DeviceDesc    = "Intel(R) ICH8R/ICH9R/ICH10R/DO/PCH SATA RAID Controller"
+PCI\VEN_8086&DEV_282A&CC_0104.DeviceDesc    = "Intel(R) ICH8M-E/ICH9M-E/PCHM SATA RAID Controller"
+
+INTEL="Intel"
+AN="AN"
+LPM="LPM"
+LPMSTATE="LPMSTATE"
+LPMDSTATE="LPMDSTATE"
+GTF="GTF"
+DIPM="DIPM"
+
+;*******************************************
+;Non-Localizable
+SPSVCINST_ASSOCSERVICE = 0x00000002
+SERVICE_KERNEL_DRIVER  = 1
+SERVICE_BOOT_START     = 0
+SERVICE_ERROR_NORMAL   = 1
+REG_EXPAND_SZ          = 0x00020000
+REG_DWORD              = 0x00010001

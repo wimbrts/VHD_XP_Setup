@@ -1,0 +1,195 @@
+<html>
+    <head>
+        <title>MBR Fix - Fix MBR problems</title>
+    </head>
+    <body>
+        <P align="center">MbrFix.exe
+        </P>
+        <P align="center">Copyright (C) 2004-2009 Systemintegrasjon AS
+        </P>
+        <P align="center"><A href="http://www.sysint.no">http://www.sysint.no</A></P>
+        
+            <h3>Usage:</h3>
+            <PRE>
+    MbrFix /drive &lt;num&gt; {/partition &lt;part&gt;} &lt;command&gt; { /yes } { /byte }
+</PRE>
+            <h3>Requirements:</h3>
+        <P>The program is made for Windows NT, Windows 2000, Windows XP, Windows Server 
+            2003, Windows Vista, Windows Server 2008, Windows 7 and Windows PE. Both 32-bit and 64-bit x64 editions are supported.</P>
+        <P>You need administrative privileges to make it work!</P>
+        <H3>
+            Purpose:</H3>
+            <p>
+                Perform several Master Boot Record (MBR) tasks, like backing up, restoring, fixing
+                the boot code in the MBR, etc. The utility should <b>not</b> be used for GUID Partition
+                Table (GPT) disks. The utility now, by popular demand, also come in a x64-version
+                running unde x64-editions of Windows and PE.</p>
+            <h3>
+                Commands:</h3>
+        <PRE>    MbrFix /drive &lt;num&gt; driveinfo              Display drive information
+    MbrFix /drive &lt;num&gt; drivesize              Returns drive size in MB as return value
+    MbrFix /drive &lt;num&gt; listpartitions         Display partition information
+    MbrFix /drive &lt;num&gt; savembr &lt;file&gt;         Save MBR and partitions to file
+    MbrFix /drive &lt;num&gt; restorembr &lt;file&gt;      Restore MBR and partitions from file
+    MbrFix /drive &lt;num&gt; fixmbr {/vista|/win7}  Update MBR code to W2K/XP/2003, Vista or Win7
+    MbrFix /drive &lt;num&gt; clean                  Delete all partitions on the selected disk
+    MbrFix /drive &lt;num&gt; readsignature {/byte}  Read disk signature from MBR
+    MbrFix /drive &lt;num&gt; writesignature &lt;hex&gt;   Write disk signature to MBR
+    MbrFix /drive &lt;num&gt; generatesignature      Generate disk signature in MBR
+    MbrFix /drive &lt;num&gt; readstate              Read state from byte 0x1b2 in MBR
+    MbrFix /drive &lt;num&gt; writestate &lt;state&gt;     Write state to byte 0x1b2 in MBR
+    MbrFix /drive &lt;num&gt; readdrive &lt;startsector&gt; &lt;sectorcount&gt; &lt;file&gt;
+                                               Save sectors from drive to file
+    MbrFix /drive &lt;num&gt; /partition &lt;part&gt; fixbootsector &lt;os&gt;     
+                                               Update Boot code in boot sector
+    MbrFix /drive &lt;num&gt; /partition &lt;part&gt; getpartitiontype 
+                                               Get partition type
+    MbrFix /drive &lt;num&gt; /partition &lt;part&gt; setpartitiontype &lt;typenum&gt;     
+                                               Set partition type
+    MbrFix /drive &lt;num&gt; /partition &lt;part&gt; setactivepartition 
+                                               Set active partition
+    MbrFix /drive &lt;num&gt; getactivepartition     Get active partition
+    MbrFix volumeinformation driveletter       Get volume information for partition
+    MbrFix flush {driveletter(s)}              Flush files to disk for partition
+    MbrFix listpartitiontypes                  List partition types
+</PRE>
+        <P></P>
+        <p>
+            Drive numbering &lt;num&gt; starts on 0.<br />
+            Partition numbering &lt;part&gt; starts on 1.</p>
+        <p>
+            Commands restorembr, fixmbr, generatesignature, writestate, clean, setactivepartition and
+            fixbootsector will ask for confirmation unless /yes is included. 
+            All these commands may lead to data loss if used incorrectly or without intention.</p>
+        <p>
+            If the /byte option is given for the readsignature command, the signature is 
+            returned as a byte array instead of as a DWORD.
+            Writesignature requires the new signature to be specified as 8 hex digits.</p>
+        <p>
+		    If /vista is used with the fixmbr command, a Windows Vista MBR is written,
+		    if /win7 is used, a Windows 7 MBR is written instead of the default
+		    Win2000/XP/2003 MBR.  The Vista or Win7 MBR should work with the other OS'es.</p>
+        <p>
+            When fixing boot sector of a chosen partition, the wanted OS version must be specified.
+            For now, the only valid choices are WIN98, DOS5 and DOS6.<br />
+            The purpose of the fixbootsector command is to insert boot code for loading DOS
+            from a partition created and formatted as FAT using the Windows 2000/XP/2003 tools,
+            since those tools inserts boot code for loading NTLDR.</p>
+		<P>
+        <H3>Return codes:</H3>
+        <P>
+            The program reports an errorlevel as 0 for OK and other values for errors.<br>
+            The exception to this is the ReadState, GetPartitonType and GetActivePartitions
+            command which returns the state as a 
+            return code as well as printing to stdout. Any errors for this command&nbsp;are 
+            returned as negative values because of this. The DriveSize command returns 
+            the&nbsp;drive size in MB, and 0 in case of error.
+        </P>
+        <h3>Why do I need this utility?</h3>
+        <P>Well, I was testing Windows Embedded XP using a virtual PC, and was booting 
+            Windows PE from a CD-ROM to partition a brand new harddisk (quite cheap, since 
+            it was virtual <STRONG><EM>!</EM></STRONG>). Using the diskpart.exe utility 
+            (found in Windows XP and Windows Server 2003, available as a download for 
+            Windows 2000), I created the partition, made it Active, assigned it a drive 
+            letter. I then used the format.exe utility to format it to NTFS (format C: 
+            /fs:ntfs).</P>
+        <pre>DISKPART&gt; detail part
+Partition 1
+Type: 07
+Hidden: No
+Active: Yes
+
+ Volume ###  Letter  Lable       Fs     Type        Size     Status     Info.
+ ----------  ---  -----------  -----  ----------  -------   ---------  --------
+* Volume 1     C    WinXP        NTFS   Partition    149 MB   OK        System            
+            </pre>
+        <P>I then mounted a network drive to my physical computer and copied the boot.ini, 
+            ntldr, ntdetect.com, windows folder, program files folder, etc. from the 
+            Windows Embedded XP image directory. Everything to make it boot.</P>
+        <P>Well everything should be OK, so I rebooted the (virtual) computer and expected 
+            it to boot up Windows Embedded XP.</P>
+        <P>But not so! It just sat there with a nice black screen. No error message at all.</P>
+        <P>Some investigation later on the Internet, I found this very informative page by 
+            Daniel B. Sedory: <A href="http://thestarman.narod.ru/asm/mbr/index.html#MBR">
+                http://thestarman.narod.ru/asm/mbr/index.html</A>, 
+            containing a wealth of MBR info. The info on one of the pages states that the 
+            MBR code is installed on the drive when the Windows setup program runs and no 
+            MBR code exists already. Hmm.., seemed to be&nbsp;right on the mark.</P>
+        <P>I searched further on the Internet, but the only utilities I found which could 
+            install MBR code was for other operating systems, like FDISK.exe /MBR for DOS 
+            (but I wouldn't boot to DOS...) or the fixmbr command in the Windows 
+            2000/XP/2003 Recovery Console. Didn't want that either. Wanted something to 
+            work on a Windows 32 bit platform, to be able to fix the problem in other cases 
+            when using Win PE and just plain copying in the operating system 
+            files.&nbsp;So, then I was left to make the utility myself!</P>
+        <P>Problem solved: After booting up Windows PE from CD again, the command &nbsp; <FONT face="Courier New" size="2">
+                <STRONG>MBRFix /drive 0 fixmbr /yes</STRONG></FONT> &nbsp; solved it all. 
+            Embedded XP booted&nbsp;like a charm.</P>
+        <H3>Samples:</H3>
+        <pre>
+C:\&gt; MbrFix /drive 0 listpartitions
+# Boot Size (MB) Type
+1  Yes     151001    6  DOS 3.31+ 16-bit FAT (over 32M)
+2          1623   12  WIN95 OSR2 32-bit FAT, LBA-mapped
+3             0    0  None
+4             0    0  None
+
+C:\&gt; MbrFix /drive 0 savembr Backup_MBR_0.bin
+
+C:\&gt; MbrFix /drive 0 restorembr Backup_MBR_0.bin
+You are about to Restore MBR,
+are you sure (Y/N)? <b>Y</b>
+
+C:\&gt; MbrFix /drive 0 fixmbr /yes
+
+C:\&gt; MbrFix /drive 0 fixmbr /vista /yes
+
+C:\&gt; MbrFix /drive 0 /partition 2 fixbootsector WIN98 /yes
+
+C:\&gt; MbrFix /drive 0 /partition 2 setpartitiontype 14 /yes
+
+C:\&gt; MbrFix flush            (flush all drives)
+
+C:\&gt; MbrFix flush cde        (flushes C:, D: and E:)
+C:\&gt; mbrfix readsignature
+
+C:\&gt; mbrfix writesignature 473d4f07
+
+        </pre>
+        <H3>Readstate and Writestate:</H3>
+        <P>The commands <EM>readstate</EM> and <EM>writestate</EM> use a byte at offset 
+            0x1b2 to store state. This was changed from offset 0x1b0 used in earlier versions to be compatible with Windows Vista MBR.
+            These commands&nbsp;are only useful in a scenario where you 
+            use Windows PE to roll out other MS operating systems, and you <EM>have no other 
+                place</EM> to store information about where you are in the installation 
+            process. This location in the MBR is unused as far as known, from the days of DOS 3.30 until
+            Vista.&nbsp;</P>
+        <p>
+            <h3>Credits:</h3>
+        <P>Daniel B. Sedory, for his compilation of information on <A href="http://thestarman.narod.ru/asm/mbr/index.html#MBR">
+                http://thestarman.narod.ru/asm/mbr/index.html#MBR</A> and for 
+            his feedback on the program.</P>
+        <H3>User License Agreement:</H3>
+        <p>
+            The program is delivered AS-IS, that is without any form of guarantee. You may 
+            freely use the program for any legal purpose, and you may 
+            freely&nbsp;distribute it, except
+            for commercial purposes, as long as this file is distributed along the program file.
+            If re-distributed (CD/DVD-compilations or similar, on Web-pages, or with other non-commercial
+            products), credit should be given to Kåre Smith and Systemintegrasjon AS.</p>
+        <P>Incorrect use of this program <STRONG>may</STRONG> cause <STRONG>loss of all data</STRONG>
+            on your disk-drives. The same applies to any bugs in the program. 
+            All use of this program is&nbsp;at the risk of the user. 
+            Systemintegrasjon AS does not accept any liability for any damage the program 
+            might cause.</P>
+        <p><b>If you do not accept these terms, you must delete the 
+                program,&nbsp;MbrFix.exe
+            and MbrFix64.exe,&nbsp;at once!</b></p>
+         <h3>Changes:</h3>
+        <h5>Version 1.3.0.0</h5>
+        <p>Fixed bug in the fixbootsector command, which always wrote to drive 0.</p>
+        <p>Added support for Windows 7 MBR.</p>
+        <P align="right"><EM>Updated by Kåre Smith, 5. august 2009</EM></P>
+        <!-- Comment: Originally developed by Kåre Smith, 28. November 2004 -->
+    </body>
+</html>

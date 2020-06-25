@@ -1,0 +1,189 @@
+; ahcix86.INF
+; Copyright Tue 10/04/2005 ATI Technologies Inc.
+;
+[Version]
+signature="$Windows NT$"
+Class=SCSIAdapter
+ClassGUID={4D36E97B-E325-11CE-BFC1-08002BE10318}
+CatalogFile=ahcix86.cat
+Provider=%ATI%
+DriverVer=03/06/2007, 2.5.1540.39
+;
+
+[DestinationDirs] 
+ahci8086.Files.x86_12 = 12 
+
+[SourceDisksNames.x86]
+0=%Desc_x860%
+
+[SourceDisksFiles.x86]
+ahcix86.sys=0,
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer] 
+%ATI%=ATI
+
+[ATI]
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_E0361631
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_303117AA
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_303217AA
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_0C8D105B
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_82881043
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_01FA1028
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_02061028
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_73251462
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_73241462
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_02041028
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_01231025
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_01241025
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_110A1734
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_02041028
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_01231025
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_01241025
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_602A1509
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_602B1509
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_80121854
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_80131854
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_2C311509
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_595016F3
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_595216F3
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_240E174B
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_2410174B
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_240D174B
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_500017F2
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_60101695
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_73281462
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_73291462
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_14F21043
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_2A52103C
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_2A51103C
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_13E810CF
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_30C2103C
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_2A4E103C
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_2A4F103C
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_01FC1028
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_01FD1028
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_604C107B
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_B0051458
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_10D11734
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_600F1695
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_600E1695
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_21231019
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_21241019
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_43811019
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_43821019
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_100415BD
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_100515BD
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_0611A0A0
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_0614A0A0
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_21341019
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_21351019
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_21361019
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_21811019
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_21821019
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_21411019
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_21421019
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_72431462
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_72441462
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_71741462
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_71751462
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_B0031458
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_D6028086
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_43811849
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_43821849
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_280A103C
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_2814103C
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_82311043
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_82321043
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_43811002
+%NapaDesc%=Napa_Inst,PCI\VEN_1002&DEV_4380&SUBSYS_43821002
+%ATI_Raid_ControllerDesc%=NODRV,SCSI\ProcessorATI_____
+
+[NODRV]
+CopyFiles=MoveNODRV
+
+[MoveNODRV]
+
+[NODRV.Services]
+;
+; this is blank to just allow the install to succeed
+;
+AddService = , %SPSVCINST_ASSOCSERVICE%   ; null service install
+
+[Napa_Inst.ntx86] 
+CopyFiles = ahci8086.Files.x86_12 
+
+[Napa_Inst.ntx86.Services] 
+AddService = ahcix86,0x00000002,Napa_Service_Instx86, Napa_EventLog_Inst 
+
+[Napa_Service_Instx86] 
+ServiceType = %SERVICE_KERNEL_DRIVER% 
+StartType = %SERVICE_BOOT_START% 
+ErrorControl = %SERVICE_ERROR_NORMAL% 
+ServiceBinary = %12%\ahcix86.sys 
+LoadOrderGroup = "SCSI Miniport"
+AddReg = pnpsafe_pci_addreg
+AddReg = ATI_Installer_AddReg
+
+
+[ahci8086.Files.x86_12] 
+ahcix86.sys
+
+[Napa_EventLog_Inst] 
+AddReg = Napa_EventLog_Inst.AddReg 
+ 
+[Napa_EventLog_Inst.AddReg] 
+HKR,,EventMessageFile,%REG_EXPAND_SZ%,"%%SystemRoot%%\System32\IoLogMsg.dll" 
+HKR,,TypesSupported,%REG_DWORD%,7
+
+[pnpsafe_pci_addreg] 
+HKR, Parameters\PnpInterface, 5, 0x00010001, 0x00000001
+HKR, Parameters\Device, NumberOfRequests, 0x00010001, 0x00000080 
+HKR, Settings\CAM, EnableALPEDisableHotplug, 0x00010001, 0x00000000 
+HKR, Settings\CAM, EnableCCC, 0x00010001, 0x00000001 
+HKR, Settings\CAM, CCCTimeoutValue, 0x00010001, 10 
+HKR, Settings\CAM, CCCCompletionValue, 0x00010001, 32 
+HKR, Settings\CAM, NCQEnableDiskIDBits, 0x00010001, 0x00000000 
+HKR, Settings\CAM, EnableHIPM, 0x00010001, 0x00000000 
+HKR, Settings\CAM, EnableDIPM, 0x00010001, 0x00000000 
+
+[ATI_Installer_AddReg]
+HKLM,"Software\ATI Technologies\Install\South Bridge\ATI_AHCI_RAID",DisplayName,,"ATI AHCI RAID"
+HKLM,"Software\ATI Technologies\Install\South Bridge\ATI_AHCI_RAID",Version,,"2.5.1540.39"
+HKLM,"Software\ATI Technologies\Install\South Bridge\ATI_AHCI_RAID",Install,,"Success"
+
+[pnpsafe_isa_addreg] 
+HKR, Parameters\PnpInterface, 1, 0x00010001, 0x00000001 
+
+[pnpsafe_eisa_addreg] 
+HKR, Parameters\PnpInterface, 2, 0x00010001, 0x00000001 
+
+
+[Strings] 
+
+;  *******Localizable Strings******* 
+ATI= "ATI Technologies Inc." 
+Desc_x860= "ATI AHCI Compatible RAID Controller Driver" 
+NapaDesc= "ATI AHCI Compatible RAID Controller" 
+ATI_Raid_ControllerDesc= "ATI RAID Console"
+
+;  *******Non Localizable Strings******* 
+
+SERVICE_BOOT_START = 0x0 
+SERVICE_SYSTEM_START = 0x1 
+SERVICE_AUTO_START = 0x2 
+SERVICE_DEMAND_START = 0x3 
+SERVICE_DISABLED = 0x4 
+
+SERVICE_KERNEL_DRIVER = 0x1 
+SERVICE_ERROR_IGNORE = 0x0 
+SERVICE_ERROR_NORMAL = 0x1 
+SERVICE_ERROR_SEVERE = 0x2 
+SERVICE_ERROR_CRITICAL = 0x3 
+
+REG_EXPAND_SZ = 0x00020000 
+REG_DWORD = 0x00010001 
+
+SPSVCINST_ASSOCSERVICE=0x00000002

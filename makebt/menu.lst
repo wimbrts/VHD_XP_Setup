@@ -1,0 +1,43 @@
+color white/blue  black/light-gray white/black white/black
+
+# splashimage /images/sunrise.gz
+timeout 10
+default 0
+ 
+iftitle [if exist /bootmgr] Boot Manager Menu - Win 7/8 VHD
+chainloader /bootmgr
+
+iftitle [if exist /images/memtest.bin] MemTest86+
+kernel /images/memtest.bin
+
+iftitle [if exist /images/plpbt.bin] PreLoad USB2.0 - via PLoP BootManager
+kernel /images/plpbt.bin
+
+title find and load NTLDR   of Windows NT/2K/XP
+find --set-root --ignore-floppies --ignore-cd /ntldr
+map () (hd0)
+map (hd0) ()
+map --rehook
+find --set-root --ignore-floppies --ignore-cd /ntldr
+chainloader /ntldr
+
+title find and load BOOTMGR of Windows 7 / 8 / VISTA
+find --set-root --ignore-floppies --ignore-cd /bootmgr
+map () (hd0)
+map (hd0) ()
+map --rehook
+find --set-root --ignore-floppies --ignore-cd /bootmgr
+chainloader /bootmgr
+
+iftitle [set pe86e=/images/7pe_x86_E.iso && if exist %pe86e%] %pe86e% - ISO - 302 MB
+# find --set-root --ignore-floppies %pe86e%
+map  %pe86e% (0xff)
+map --hook
+root (0xff)
+chainloader (0xff)/BOOTMGR || chainloader (0xff)/bootmgr
+
+iftitle [if exist /images/LiveXP_WIM.iso] Live XP - images/LiveXP_WIM.iso
+map /images/LiveXP_WIM.iso (0xff) || map --mem /images/LiveXP_WIM.iso (0xff)
+map --hook
+root (0xff)
+chainloader (0xff)
