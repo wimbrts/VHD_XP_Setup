@@ -1,0 +1,8 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\Folder\shell\Command Prompt]
+@="@shell32.dll,-22022"
+
+[HKEY_CLASSES_ROOT\Folder\shell\Command Prompt\command]
+@="cmd /k cd /d %1"
+

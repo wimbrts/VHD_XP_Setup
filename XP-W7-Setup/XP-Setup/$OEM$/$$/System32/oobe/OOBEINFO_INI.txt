@@ -1,0 +1,40 @@
+;
+; When in winnt.sif file in [Data] Section UnattendSwitch="No" 
+; we can use OOBEINFO.INI for Settings of Windows Welcome Screens - Rename File as OOBEINFO.INI
+;
+; OOBEINFO.INI - skip anything but Resolution Check and User creation - 12 May 2008
+; place in USB_MultiBoot_9\$OEM$_UserXP\$$\System32\oobe folder as File OOBEINFO.INI
+
+[StartupOptions]
+Offline = 1
+Registration = 1
+ScreenResolutionCheck = 1
+
+; ScreenResolutionCheck = 0 gives problem, too low resolution with scroll window
+
+[Options]
+IntroOnly = 0
+NoIspPreconfig = 1
+JoinDomain = 0
+AdminPW = 0
+SkipAutoUpdate = 1
+
+; SkipAutoUpdate = 1 does not work, requires Registry Patch with Batch File SET_WUP.cmd running from CMDLINES.TXT
+; SET_WUP.cmd in $OEM$ Folder - skip Windows Update Screen in OOBE - Windows Welcome Screens
+; 4 = Automatic Updates Download + Install, Required to skip Windows Update Screen in OOBE 
+; 3 = Only Download Updates
+; 2 = Only Notify Updates
+; 1 = No Windows Updates
+;
+; SET_WUP.cmd
+;
+; SET RegKey="HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update" 
+; reg.exe add %RegKey% /v AUOptions /t REG_DWORD /d 4 /f 
+; EXIT
+;
+
+; You can prepopulate up to six end-user identities, instead of using useraccounts.cmd and CMDLINES.TXT
+; 
+; [UserInfo]
+; Identity000="UserXP"
+; Identity001="Some User"

@@ -1,0 +1,5 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Streams]
+"Settings"=hex:08,00,00,00,04,00,00,00,01,00,00,00,00,77,7e,13,73,35,cf,11,ae,\
+  69,08,00,2b,2e,12,62,04,00,00,00,01,00,00,00,43,00,00,00

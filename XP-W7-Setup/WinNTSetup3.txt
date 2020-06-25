@@ -1,0 +1,157 @@
+Thanks to JFX
+http://www.msfn.org/board/topic/149612-winntsetup-v34/
+
+Features:
+
+- Install Windows 2k/XP/2003/2008/2012/Vista/7/8.x x86/x64
+- Practically runs even on the most minimalistic WinPE
+- Choose able drive letter for the new Windows installation
+- Install Windows also if nlite/vlite has remove winnt32.exe/setup.exe
+- Integrate Drivers: normal PNP and Textmode Drivers also
+- patch uxtheme to allow unsigned Themes
+- Some tweaks
+- Support "Windows to Go" for Windows 7 and later installs
+Not Supported:
+ 
+- No Windows embedded version (this includes WinFLP)
+- No Installation onto USB disk *New* only Windows 7 and later
+- No support for ESD files
+
+
+As some may know the last version 1.5 had only Support for Win 2000/XP/2003.
+Fujianabc present an very easy approach to install Windows 7 NT 6.x fast installer
+
+basically it's simply applying the windows image from install.wim and generating the boot files.
+He also discovered that the drive letter of a Windows 7 image can be (opposed to Vista) easily changed.
+So I have added that way of installing to WinNTSetup.
+
+
+
+For the driver installation:
+
+Every driver added in NT6.x windows will be added to the driver store.
+So it's not recommended to add countless driver, but rather more really required ones.
+
+NT5.x massstorage driver integration is possible thanks to Mr dUSHA powerful MSSTMake.exe tool
+
+To the Unattend option:
+
+It's possible to use an unattend.xml to run the Setup unattended.
+But as the actual WinPE Setup Phase isn't effective in that way of install, all Winpe related settings inside the unattend.xml
+won't be applied.
+
+Ini config file
+
+It's possible to save all GUI-settings to a ini file:
+
+push Ctrl + S to save all settings to an ini.
+push Ctrl + L to load all settings from an ini.
+
+A WinNTSetup.ini file in the same dir as the app itself will be loaded automatically at startup.
+
+It also can be selected via command line:
+
+WinNTSetup.exe /cfg:"C:\mysettings.ini"
+
+more command line options
+Spoiler 
+
+
+- nt6, nt5 or vhd have to be the first parameter all other don't require any order
+- does not matters if -paramter or /Parameter
+- give paths can be relative (to WinNTSetup_x??.exe)
+- if a path includes spaces enclose it with " "
+
+- nt6 or nt5 - will let winntsetup know which os to install (nt6: for vista and later, nt5 for XP/2003)
+
+- /source:(path) - defines the installation sources (for nt5 the root of the windows CD, for nt6 the install.wim file)
+- /syspart:(driveletter:) - defines the driveletter you want as boot drive
+- /tempdrive:(driveletter:) - defines the driveletter you want as installation drive
+
+- /unattend:(file) - defines the path of the unattend file (winnt.sif or unattend.xml)
+- /drivers:(path) - defines the path to a drivers folder you want to use
+- /wimindex:n - defines the edition inside install.wim which should be installed beginning with 1 (like in the combo box Edition)
+
+- /setupwait - will push the setup button and show you the proceed page
+- /setup - will start the setup
+- /reboot - will automaticly reboot 30 seconds after setup finished
+
+- /forceunsigned - (only for installing Windows 7) will let the driver integration accept unsigned drives
+- /testsigning - will set testsigning flag for the new Windows installation
+- /disableuac - will disable User Account Control
+
+- /Sysletter:{Letter} - will define the systemdrive letter the new windows installation will have
+- /SaveDriveLetters - will save the current driveletter assaignment for the new windows installation
+- /Uxtheme - will patch the uxtheme related dll's to enable the use of custom msstyles files
+- /nobootsect - will not update BootSector and Master Boot Record
+
+- /RunAfter:{command} - will run a command before reboot
+- /cfg:{inifile} - load settings from ini file
+- /HiveFix:{inffile] - use a special inf, to customize setup http://www.msfn.org/...600-hivefixinf/
+
+
+
+- vhd-create
+- /VHDFile:{path} - defines the full path for the new VHD file
+- /VHDSize:{size} - defines the size in MB or GB (ex. 25600MB or 25GB)
+- /VHDType:{type} - defines the type of VHD: fixed, expandable or fixedfast
+
+---- optional ----
+
+- /VHDLabel:{Label} - label for the vhd partition
+- /VHDAlig:{Alig} - Allignment (32|64|128|256|512|1024|2048) of the partition
+- /VHDAllo:{Allo} - Allocation unit (512|1024|2048|4096|8192|16K|32K|64K) of the partition
+
+- vhd-attach - attach a VHD to system
+/VHDFile:{path}
+
+- vhd-detach - detach a VHD from system
+/VHDFile:{path}
+
+
+
+examples:
+
+- Install Windows7 Ultimate (usually Wimindex 5) to drive C:, using unattend.xml file and define driver to integrate.
+Use C: as driveletter for the new Win installation, run set_7_usb_boot.cmd before rebooting
+
+
+WinNTSetup2_x86.exe NT6 -source:G:\sources\install.wim -WimIndex:5 -syspart:C: -tempdrive:C: -unattend:"unattend\Win7x86_Ultimate_en.xml"
+-ForceUnsigned -drivers:"D:\driver_Win7x86" -Sysletter:C -RunAfter:"set_7_usb_boot.cmd C:\windows" -setup -reboot
+- Install Windows XP to drive D:, where boot drive is C:, using unattend file [app dir]\unattend\winnt.sif,
+integrate drivers [app dir]\XP_drivers, finsih install and reboot. But does not change MBR and BPR
+ 
+
+WinNTSetup2_x86.exe NT5 -source:E:\XPCD -syspart:C: -tempdrive:D: -unattend:"unattend\winnt.sif" -drivers:"XP_drivers" -setup -reboot -nobootsect
+- creating a 25GB fixed VHD file
+ 
+
+WinNTSetup2_x86.exe VHD-create -VHDFile:"C:\my.vhd" -VHDSize:25GB -VHDType:fixed
+-attach vdisk "C:\my.vhd"
+ 
+
+WinNTSetup2_x86.exe VHD-Create -unmount -VHDFile:"C:\my.vhd"
+-detach vdisk "C:\my.vhd"
+ 
+
+WinNTSetup2_x86.exe VHD-attach -VHDFile:"C:\my.vhd"
+
+
+Changelog:
+
+Spoiler 
+
+
+To install Windows in a VHD file:
+
+- requires Windows 7 as OS and Windows 7 Ultimate, Enterprise or Server 2008 R2 as Source
+- create a partitioned VHD and assign a drive letter (push Ctrl + Shift + V to use build in diskpart wrapper for this)
+- select the VHD drive as installation drive (make sure you boot drive ist a active primary partition on a physical disk)
+
+If you get an Antivirus warning from your AV software, please report it to them as a false positive and let them check it.
+
+
+Current Version: 3.4.0
+http://sdrv.ms/19lIr3s
+ 
+  

@@ -1,0 +1,5 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System\Shutdown]
+"ShowHibernateButton"=dword:00000001
+
