@@ -1,0 +1,287 @@
+Install XP in VHD
+
+Download VHD_XP_Setup - http://reboot.pro/files/file/315-vhd-xp-setup/ Or http://www.mediafire.com/?233dka636369k
+
+VHD_XP_Create.exe - Make VHD file and make Grub4dos Boot Menu on HDD or USB 
+for Install of XP in VHD by using XP Setup ISO file and WinVBlock driver
+
+YouTube Video Install XP in VHD - http://reboot.pro/links/goto/223-vhd-xp-setup-install-xp-in-vhd/
+
+Possible Scenario's 
+- Boot from USB and Install XP in VHD located on NTFS drive of USB or HDD
+- Boot with Grub4dos Menu on NTFS USB-Stick for Install of XP in VHD located on NTFS Drive of Internal Harddisk
+- Boot with Portable USB-harddisk and Direct Install XP in VHD located on NTFS System Drive of USB-Harddisk
+
+First Prepare XP Setup ISO file with integrated DriverPacks as described below in Section 2. How to prepare XP Setup Source ?
+http://www.911cd.net/forums//index.php?showtopic=23553
+and Copy XP Setup ISO file to the root of internal harddisk drive of your computer.
+
+Direct Install of XP in VHD on USB requires to Integrate Wait4UFD driver in XP Setup Source
+http://reboot.pro/topic/18107-integratedrv-install-xp-2003-to-a-usb-30-disk-and-boot-from-it/#entry167235
+
+Selections to be made:
+Boot Drive - FAT32 or NTFS - can be USB-stick so that there are no changes needed in the Windows installation on the internal harddisk
+System Drive - NTFS - where VHD file is created e.g your internal harddisk drive
+XP Setup ISO file - located on internal harddisk drive so that fast loading into RAM is enabled
+
+Procedure to Make 2 GB VHD file and make Grub4dos Boot Menu on HDD or USB 
+for Install of XP in VHD by using XP Setup ISO file and WinVBlock driver
+
+0. Run VHD_XP_Setup.exe and Extract to simple path on internal Harddisk - gives folder VHD_XP_Setup
+In Win 7/8 OS Set User Account Control Off and Reboot
+1. Use imdiskinst.exe to Install ImDisk driver (if not present already)
+- Imdisk is used to mount VHD and HDD Image files in a virtual drive
+2. If desired use first UFD_FORMAT.exe to make USB-Stick bootable with Grub4dos Menu and that can be used as Target Boot Drive
+- Then Run VHD_XP_Create.exe to create XPSRC1.vhd and Grub4dos Boot Menu for Install of XP in VHD
+- Select Target Boot Drive and NTFS System Drive and select XP Setup ISO file located in root of Harddisk Drive 
+3. Reboot and in Grub4dos menu select Start XP Setup on XPSRC1.vhd - WinVBlock driver
+- XPSRC1.vhd has already NTFS compressed format, so you should NOT format at Setup, just keep settings
+- Format XPSRC1.vhd inside XP Setup cannot be used, it results in corrupt message
+4. After Reboot select Continue XP Setup and then Reboot to Start XP from Image XPSRC1.vhd
+
+Option to Install 130 extra MassStorage drivers to make Universal XP VHD that can boot from USB on all hardware
+When WINDOWS\DriverPacks store with subfolder M (MassStorage) for support of SCSI- en RAID-controllers is found in XP Source VHD,
+then option MassStor of USB_XP_Fix.exe Or VHD_XP_Compact.exe will add CriticalDeviceDatabase registry and Services to allow booting on all hardware.
+
+After XP Setup has finished then Boot with other Windows OS and use:
+5. USB_XP_Fix.exe to enable booting from USB and to Install MassStorage drivers.
+Select XPSRC1.vhd Image file and USB Boot Drive and click GO to create Grub4dos Boot Menu on USB Boot Drive.
+If desired Copy XPSRC1.vhd to NTFS USB Drive for having Portable USB Drive booting with XP VHD.
+http://reboot.pro/topic/9830-universal-hdd-image-files-for-xp-and-windows-7/ Or http://www.911cd.net/forums//index.php?showtopic=23553
+
+Or
+5. VHD_XP_Compact.exe - Make Portable XP in 1.2 GB VHD Or Mini XP in 0.6 GB VHD booting from Grub4dos Menu on USB or HDD
+Make VHD with reduced size of XP and enable booting from USB and Install MassStorage drivers to boot from USB on all hardware.
+http://reboot.pro/topic/18657-vhd-xp-compact-program-to-make-mini-xp/ Or http://www.911cd.net/forums//index.php?showtopic=25375
+
+
+UFD_FORMAT.exe to make USB-Stick bootable with Grub4dos Menu and that can be used as Target Boot Drive
+http://reboot.pro/topic/14908-ufd-format-and-boot-usb-make-bootable-usb-drives/
+
+UEFI MULTI - Make Multi-Boot USB-Harddisk Booting with Boot Manager Menu and using Boot Image files
+http://www.911cd.net/forums//index.php?showtopic=25269
+
+BOOT_IMG.exe makes Grub4dos Boot Menu on Target Boot Drive for VHD on NTFS Target System Drive (FileCopy of VHD occurs if not yet present)
+
+
+More Info on How to prepare XP Setup ISO file
+http://www.911cd.net/forums//index.php?showtopic=23553
+
+Integrate Wait4UFD driver to XP Setup Source folder containing i386 folder to enable direct Install of XP in VHD on USB
+Thanks to Tal Aloni - http://reboot.pro/topic/18119-integratedrv/
+Direct Install of XP in VHD on USB - http://reboot.pro/topic/18107-integratedrv-install-xp-2003-to-a-usb-30-disk-and-boot-from-it/#entry167235
+
+IntegrateDrv /usbboot /driver=..\Drivers\Wait4UFD /target=D:\XPSOURCE\
+
+================================================================================
+
+CD Setup Grub4dos Menu on USB-drive when using XP Setup ISO file for Install of XP in VHD
+
+use phony RAMDISK to find XP Setup ISO file NOT loaded into RAM to prevent BSOD 44
+http://reboot.pro/topic/8168-winvblock/page-10#entry101891
+
+title Continue GUI-mode XP Setup on XPSRC1.vhd - XP3_1307.iso - Size 626 MB
+find --set-root --ignore-floppies /XP3_1307.iso
+map /XP3_1307.iso (0xff)
+map --rd-size=2048
+map --mem (rd)+4 (0x55)
+map --hook
+write (0x55) #!GRUB4DOS\x00v=1\x00/XP3_1307.iso\x00\xff\x00
+find --set-root --ignore-floppies /XPSRC1.vhd
+map --mem /winvblock.ima (fd1)
+map --mem /winvblock.ima (fd0)
+map /XPSRC1.vhd (hd0)
+map --rehook
+root (hd0,0)
+chainloader /ntldr
+
+title Start -  TXT-mode XP Setup on XPSRC1.vhd - XP3_1307.iso - Size 626 MB
+find --set-root --ignore-floppies /XP3_1307.iso
+map /XP3_1307.iso (0xff)
+map --rd-size=2048
+map --mem (rd)+4 (0x55)
+map --e820cycles=0
+map --hook
+write (0x55) #!GRUB4DOS\x00v=1\x00/XP3_1307.iso\x00\xff\x00
+find --set-root --ignore-floppies /XPSRC1.vhd
+map --mem /winvblock.ima (fd1)
+map --mem /winvblock.ima (fd0)
+map /XPSRC1.vhd (hd0)
+map --e820cycles=0
+map --rehook
+chainloader (0xff)
+
+title Boot  Windows XP from Image - XPSRC1.vhd - WinVBlock driver - 2000 MB
+find --set-root --ignore-floppies /XPSRC1.vhd
+map /XPSRC1.vhd (hd0)
+map --hook
+root (hd0,0)
+chainloader /ntldr
+
+================================================================================
+
+Problems you may have
+1. - VHD must be contiguous = unfragmented - Use WinContig to solve such problem.
+2. - In case of VHD located on USB then some mobo will give VHD Disk 2048 MB No Access message in Partition Selection dialogue of XP Setup.
+In that case reboot and in VHD_XP_Create.exe use Internal Harddisk drive as System Drive where to Create VHD for XP Setup.
+It is important to use in that case XP Setup ISO without integrated Wait4UFD driver.
+After XP Setup has finished then use USB_XP_Fix.exe to enable booting from USB and to Install MassStorage drivers.
+Select XPSRC1.vhd Image file and USB Boot Drive and click GO to create Grub4dos Boot Menu on USB Boot Drive.
+Copy XPSRC1.vhd to NTFS USB Drive for having Portable USB Drive booting with XP VHD.
+3. VHD and XP Setup ISO file cannot be located on GPT partition - UEFI computers must be in BIOS compatible mode to enable booting with Grub4dos Menu.
+Use MBR partition of HDD or USB as location for VHD and XP Setup ISO file.
+4. In GUI-mode I386\asms not found error means that Virtual CD is not found in GUI-mode
+Select Checkbox - Load XP Setup ISO in RAM might help to solve this issue.
+Otherwise use WinNTSetup3 to prepare NT Setup folders in VHD mounted in ImDisk virtual drive - See Modified Procedure below
+
+
+================================================================================
+
+Modified Procedure to Make 2 GB VHD file and make NT Setup Grub4dos Boot Menu on HDD or USB and using WinVBlock driver.
+First WinNTSetup3 is used with XP Setup ISO file to prepare XP Setup folders in VHD mounted in ImDisk virtual drive.
+
+0. If desired use first UFD_FORMAT.exe to make USB-Stick bootable with Grub4dos Menu and that can be used as Target Boot Drive
+1. Then Use VHD_XP_Create.exe where XP Setup ISO file is NOT Selected in this case.
+Select Target Drives and Grub4dos Boot Menu Checkbox and use GO 
+to make XPSRC1.vhd on NTFS System Drive and to make NT Setup Grub4dos Boot Menu on Target Boot Drive.
+2. Mount XPSRC1.vhd as ImDisk Virtual Drive - if needed use imdiskinst.exe to Install ImDisk driver
+3. Use WinNTSetup v3.2 - click on XP tab - Right-click to Select XP Setup ISO file
+Select as Boot Drive and as Installation Drive the ImDisk Virtual drive of mounted XPSRC1.vhd
+Click Setup to prepare $WIN_NT$.~BT and $WIN_NT$.~LS folders in XP VHD
+http://www.msfn.org/board/topic/149612-winntsetup-v32/
+4. Reboot to Install XP in VHD  - Start TXT-mode and then reboot 2x with Grub4dos menu Boot Windows XP
+
+NT Setup Grub4dos Menu on USB-drive for Install of XP in VHD when WinNTSetup3 was used to prepare for XP Setup in VHD
+
+title Start -  TXT-mode XP Setup on XPSRC1.vhd - WinVBlock driver - 2000 MB
+find --set-root --ignore-floppies /XPSRC1.vhd
+map --mem /winvblock.ima (fd1)
+map --mem /winvblock.ima (fd0)
+map /XPSRC1.vhd (hd0)
+map --rehook
+chainloader (0xff)
+
+title Boot  Windows XP from Image - XPSRC1.vhd - WinVBlock driver - 2000 MB
+find --set-root --ignore-floppies /XPSRC1.vhd
+map /XPSRC1.vhd (hd0)
+map --hook
+root (hd0,0)
+chainloader /ntldr
+
+================================================================================
+
+Credits and Thanks to:
+JFX for making WinNTSetup3 to Install Windows 2k/XP/2003/Vista/7/8 x86/x64 - http://www.msfn.org/board/topic/149612-winntsetup-v32/
+chenall, tinybit and Bean for making Grub4dos - http://code.google.com/p/grub4dos-chenall/downloads/list
+Sha0 for making WinVBlock driver - http://reboot.pro/8168/
+Tal Aloni - for making IntegrateDrv and Wait4UFD driver -
+http://reboot.pro/topic/18107-integratedrv-install-xp-2003-to-a-usb-30-disk-and-boot-from-it/
+http://reboot.pro/topic/18119-integratedrv/
+Olof Lagerkvist for ImDisk virtual disk driver - http://www.ltr-data.se/opencode.html#ImDisk and http://reboot.pro/index.php?showforum=59
+Uwe Sieber for making ListUsbDrives - http://www.uwe-sieber.de/english.html
+cdob - Install XP from a ISO file No RAM disk - http://www.msfn.org/board/topic/149675-install-xp-from-a-iso-file/
+Doodoo for his tutorial - http://reboot.pro/13856/page__p__122385#entry122385
+sara - pmedia for her tutorial - http://reboot.pro/13731/
+jaclaz for MBRBatch.cmd http://reboot.pro/?showtopic=3191
+Dariusz Stanislawek for the DS File Ops Kit (DSFOK) - http://members.ozemail.com.au/~nulifetv/freezip/freeware/
+Microsoft for VhdTool (free to install, use, copy and distribute) - http://archive.msdn.microsoft.com/vhdtool
+
+
+:cheers:
+
+More Info on this Subject is here http://reboot.pro/topic/18547-vhd-xp-setup/ and http://www.911cd.net/forums//index.php?showtopic=25345
+
+================================================================================
+
+Section 2. How to prepare XP Setup Source ? - Prepare XP Setup ISO file with integrated UpdatePack and DriverPacks
+
+Take care that your XPSOURCE Folder is located on your Harddisk in a simple Path without SPACES.
+Copy the Content of your Windows XP Setup CD to your XPSOURCE Folder on Harddisk 
+
+First Integrate ServicePack SP3 in your XP-SP2 Source (don't use here nLite).
+http://www.helpwithwindows.com/WindowsXP/Slipstreaming_Windows_XP_Service_Pack_3.html
+Download from - http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=24
+
+In Command Window use for English version and XPSOURCE folder on drive E:
+
+WindowsXP-KB936929-SP3-x86-ENU.exe /integrate:E:\XPSOURCE
+
+Siginet's RyanVM Integrator 1.6 can then be used to Integrate Windows UpdatePacks in the XP-Source. 
+http://integrator.siginetsoftware.com/index.php?download
+Download preferred version RVM Integrator 1.6.1 Beta 2.1
+
+Windows XP UpdatePacks and Addons:
+http://www.ryanvm.net/msfn/
+http://www.ryanvm.net/msfn/updatepack-sp3.html
+http://integrator.siginetsoftware.com/index.php?addons
+http://www.ryanvm.net/forum/
+
+For Install of XP on a modern system with SATA Drives it is needed to use DPsBase.exe 
+for Integrating in your XPSOURCE DriverPack Massstorage with TXT Mode Enabled.
+http://driverpacks.net/downloads
+In that case a lot of Extra RAID SCSI and SATA Drivers (about 120 extra) are Integrated which appear in the 
+XP Setup BootFolder $WIN_NT$.~BT on Install-Drive and can prevent a lot of XP Install Boot Problems.
+Use DPsBase.exe to Integrate DriverPacks Chipset + Processor + MassStorage + LAN + WLAN DriverPacks
+which will then be located in OEM Folder in your XPSOURCE folder.
+(settings Disc - Method 2 - GuiRunOnce - Enable KTD for the DriverPacks I will Select)
+
+Always first use RyanVM Integrator and then use DPsBase to Improve your XP-Source
+DPsBase makes presetup.cmd in folder I386 and changes the I386\winnt.sif file for use of DriverPacks
+
+presetup.cmd in folder I386 will start decompression of DriverPacks located in OEM folder 
+at the beginning of GUI-mode of XP Setup, which does NOT take to much time for the 5 DriverPacks
+
+You should select to Keep The Drivers for Chipset + Processor + MassStorage + LAN
+Then WINDOWS\DriverPacks is about 135 MB which is acceptable and provides a lot of extra driver support 
+which is useful to make XP Universal and adapt easily to very different hardware.
+In that case the DevicePath is set accordingly in key
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion 
+so that XP can automatically make use of these drivers for adjusting to New Hardware
+
+When you don't use nLite, you can copy the supplied $OEM$ folder to your XP Source folder
+Change $OEM$ folder to your needs for UserAccounts and Registry Tweaks and Adding Drivers
+CMDLINES.TXT is used for making UserAccounts and install of Registry Tweaks at T-12
+Info see: http://unattended.msfn.org/unattended.xp/
+
+Use DriverForge.v4.5.4.exe to Install from C:\Drivers at T-9 of GUI XP Setup (just for the last Reboot).
+DriverForge.v4.5.4.exe was made by kickarse http://www.msfn.org/board/index.php?showtopic=110783
+At end of TXT-mode XP Setup the folder $OEM$\$1\Drivers is copied to C:\Drivers
+and $OEM$\$1\Install\DriverForge.v4.5.4.exe is copied to C:\Install
+For Auto Use of DriverForge at T-9 add uncompressed driver folders in $OEM$\$1\Drivers
+and Uncomment two rules by removing ; in winnt.sif file copied from winnt_sif to your I386 folder
+This is very useful for Install of your well known Audio and Video driver during GUI-mode of XP Setup.
+
+[SetupParams]
+UserExecute = "%SystemDrive%\INSTALL\SetupPar.cmd"
+
+Smart Driver Backup 2.12 of Jaque is very useful to Backup your drivers before install of XP
+http://www.911cd.net/forums//index.php?showtopic=20555
+
+================================================================================
+
+How to make XP Setup ISO File ?
+
+- Use BBIE (see below) or Isobuster to Extract Boot Image bootsect.bin from Original bootable XP Setup CD 
+  bbie will make image1.bin that you can copy as bootsect.bin to XP Setup source folder
+- Reduce Size of XP Setup Source folder (if needed to fit on CD then remove folders LANG  WIN9XMIG  WIN9XUPG)
+- Use ImgBurn and bootsect.bin to make Bootable CD
+
+1. Remove 3 folders LANG  WIN9XMIG  WIN9XUPG - reduction in size = 135 MB
+2. Run ImgBurn - Portable Tool in PStart Menu - IMG_XP\MULTI\PStart\Progs\ImgBurn
+   - Select Write files/folders to disc
+   - Output - Select Image File
+   - Browse Source folder and Select your XP Setup Source folder
+   - Browse Destination file - Give Name e.g. XP-Setup.iso
+   - Labels ISO 9660 - Give Name e.g. XP-Setup
+   - Advanced Restrictions - ISO9660 - Select Level X and DOS CharSet with 4x Checkbox On (allow ...)
+   - Bootable Disc - Make Image bootable - Checkbox On - Browse Boot Image - Select bootsect.bin file
+   - Bootable Disc - Emulation Type = None
+                     Load Segment = 07C0
+                     Sectors to Load = 4
+
+makebt>bbie M:\XP3_1307.iso
+BBIE - Bart's Boot Image Extractor v1.0, © 2001, Bart Lagerweij
+http://www.nu2.nu
+will make makebt\image1.bin that you can rename as bootsect.bin
+
+================================================================================
