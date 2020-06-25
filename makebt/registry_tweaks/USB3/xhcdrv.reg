@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1106&DEV_3432]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="xhcdrv"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1106&DEV_9201]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="xhcdrv"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\services\xhcdrv]
+"Type"=dword:00000001
+"Start"=dword:00000000
+"ErrorControl"=dword:00000001
+"ImagePath"="system32\\drivers\\xhcdrv.sys"
+"DisplayName"="VIA USB eXtensible Host Controller"
+"Group"="Boot Bus Extender"

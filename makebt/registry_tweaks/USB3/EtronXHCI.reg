@@ -1,0 +1,42 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1B21&DEV_1042&REV_02]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="EtronXHCI"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1B6F&DEV_7023&CC_0C0330]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="EtronXHCI"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1B6F&DEV_7052&CC_0C0330]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="EtronXHCI"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1B6F&DEV_7023&SUBSYS_80301025]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="EtronXHCI"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1B6F&DEV_7023&SUBSYS_06271025]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="EtronXHCI"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1B6F&DEV_7023&SUBSYS_06081025]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="EtronXHCI"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1B6F&DEV_7023&SUBSYS_05891025]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="EtronXHCI"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1B6F&DEV_7023&SUBSYS_70011B5B]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="EtronXHCI"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\services\EtronXHCI]
+"Type"=dword:00000001
+"Start"=dword:00000000
+"ErrorControl"=dword:00000001
+"ImagePath"="system32\\drivers\\EtronXHCI.sys"
+"DisplayName"="Etron USB 3.0 Extensible Host Controller"
+"Group"="Boot Bus Extender"
+

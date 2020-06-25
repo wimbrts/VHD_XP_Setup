@@ -1,0 +1,33 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\AMDUSB30#ROOT_HUB30]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="amdhub30"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\AMDUSB30#CLASS_09&SUBCLASS_00&PROT_00]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="amdhub30"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\AMDUSB30#CLASS_09&SUBCLASS_00&PROT_01]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="amdhub30"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\AMDUSB30#CLASS_09&SUBCLASS_00&PROT_02]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="amdhub30"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\AMDUSB30#CLASS_09&SUBCLASS_00&PROT_03]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="amdhub30"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\AMDUSB30#CLASS_09&SUBCLASS_01]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="amdhub30"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\services\amdhub30]
+"Type"=dword:00000001
+"Start"=dword:00000000
+"ErrorControl"=dword:00000001
+"ImagePath"="system32\\drivers\\amdhub30.sys"
+"DisplayName"="AMD USB 3.0 Hub Driver"
+"Group"="System Bus Extender"

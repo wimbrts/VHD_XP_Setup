@@ -1,0 +1,25 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\ENUSB3#ROOT_HUB30]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="EtronHUB3"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\ENUSB3#EXT_HUB10]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="EtronHUB3"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\ENUSB3#EXT_HUB20]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="EtronHUB3"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\ENUSB3#EXT_HUB30]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="EtronHUB3"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\services\EtronHUB3]
+"Type"=dword:00000001
+"Start"=dword:00000000
+"ErrorControl"=dword:00000001
+"ImagePath"="system32\\drivers\\EtronHUB3.sys"
+"DisplayName"="Etron USB 3.0 Extensible Hub"
+"Group"="System Bus Extender"

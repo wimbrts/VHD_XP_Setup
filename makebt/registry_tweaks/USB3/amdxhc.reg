@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1022&DEV_7812]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="amdxhc"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1022&DEV_7812]
+"ClassGUID"="{36FC9E60-C465-11CF-8056-444553540000}"
+"Service"="amdxhc"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\services\amdxhc]
+"Type"=dword:00000001
+"Start"=dword:00000000
+"ErrorControl"=dword:00000001
+"ImagePath"="system32\\drivers\\amdxhc.sys"
+"DisplayName"="AMD USB 3.0 Host Controller"
+"Group"="Boot Bus Extender"
