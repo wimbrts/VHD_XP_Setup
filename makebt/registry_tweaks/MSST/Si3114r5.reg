@@ -1,0 +1,154 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_052FA0A0]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_0C25105B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_0CC1105B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_0CCA105B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_0CCB105B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_0CCC105B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_0CCD105B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_0CCE105B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_0CCF105B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_104A147B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_104B147B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_310215BD]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_471015D5]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_71001462]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_71141095]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_71141458]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_71148086]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_71251462]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_72291462]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_81361043]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_81671043]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_902A1695]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3114&SUBSYS_B0041458]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3114r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3114r5]
+"ErrorControl"=dword:00000001
+"Start"=dword:00000003
+"Type"=dword:00000001
+"Group"="Scsi miniport"
+"DisplayName"="SiI-3114 SoftRaid 5 Controller"
+"ImagePath"=hex(2):53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,44,00,\
+  52,00,49,00,56,00,45,00,52,00,53,00,5c,00,53,00,69,00,33,00,31,00,31,00,34,\
+  00,72,00,35,00,2e,00,73,00,79,00,73,00,00,00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3114r5\ChannelConfigurations]
+"Silicon Image SiI 3114 SoftRaid 5 Controller"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3114r5\Parameters]
+"BusType"=dword:00000008
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3114r5\Parameters\Device]
+"MaximumSGList"=dword:00000021
+"NumberOfRequests"=dword:0000007c
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3114r5\Parameters\PnPInterface]
+"5"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3114r5\ProblemDevices]
+@=""
+"Maxtor 4D060H3                          DAK05GK0"="MaxMode = UDMA-5"
+"HDS724040KLSA80                         KFAOA32A"="DisableAtaQueueing"
+"HDS722525VLSA80                         V36OA6MA"="DisableAtaQueueing"
+"HDS722516VLSA80                         V34OA6MA"="DisableAtaQueueing"
+"Maxtor 7B250S0                          BANC1B70"="DisableSataQueueing"
+"HTS541060G9SA00                         MB3OC60D"="DisableSataQueueing"
+"HTS541080G9SA00                         MB4OC60D"="DisableSataQueueing"
+"HTS541010G9SA00                         MBZOC60D"="DisableSataQueueing"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3114r5\SupportedSubsystemIDs]
+"Silicon Image SiI 3114 SoftRaid 5 Controller"=dword:71141095
+"Silicon Image SiI 3114 SoftRaid 5 Controller (Intel 8086)"=dword:71148086
+"Silicon Image SiI 3114 SoftRaid 5 Controller (ASUS 8136)"=dword:81361043
+"Silicon Image SiI 3114 SoftRaid 5 Controller (ASUS 8167)"=dword:81671043
+"Silicon Image SiI 3114 SoftRaid 5 Controller (EPoX 902A)"=dword:902a1695
+"Silicon Image SiI 3114 SoftRaid 5 Controller (DFI 3102)"=dword:310215bd
+"Silicon Image SiI 3114 SoftRaid 5 Controller (Aopen 052F)"=dword:052fa0a0
+"Silicon Image SiI 3114 SoftRaid 5 Controller (ABIT WI-1P)"=dword:104a147b
+"Silicon Image SiI 3114 SoftRaid 5 Controller (ABIT SC-1P)"=dword:104b147b
+"Silicon Image SiI 3114 SoftRaid 5 Controller (Gigabyte B004)"=dword:b0041458
+"Silicon Image SiI 3114 SoftRaid 5 Controller (MSI MS-7100)"=dword:71001462
+"Silicon Image SiI 3114 SoftRaid 5 Controller (MSI MS-7125)"=dword:71251462
+"Silicon Image SiI 3114 SoftRaid 5 Controller (MSI MS-7229)"=dword:72291462
+"Silicon Image SiI 3114 SoftRaid 5 Controller (Tatung 4710)"=dword:471015d5
+"Silicon Image SiI 3114 SoftRaid 5 Controller (Foxconn 0C25)"=dword:0c25105b
+"Silicon Image SiI 3114 SoftRaid 5 Controller (Foxconn 0CC1)"=dword:0cc1105b
+"Silicon Image SiI 3114 SoftRaid 5 Controller (Foxconn 0CCA)"=dword:0cca105b
+"Silicon Image SiI 3114 SoftRaid 5 Controller (Foxconn 0CCB)"=dword:0ccb105b
+"Silicon Image SiI 3114 SoftRaid 5 Controller (Foxconn 0CCC)"=dword:0ccc105b
+"Silicon Image SiI 3114 SoftRaid 5 Controller (Foxconn 0CCD)"=dword:0ccd105b
+"Silicon Image SiI 3114 SoftRaid 5 Controller (Foxconn 0CCE)"=dword:0cce105b
+"Silicon Image SiI 3114 SoftRaid 5 Controller (Foxconn 0CCF)"=dword:0ccf105b
+"Silicon Image SiI 3114 SoftRaid 5 Controller (Gigabyte 1458)"=dword:71141458

@@ -1,0 +1,56 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1106&DEV_0571]
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+"Service"="videX32"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1106&DEV_0581&CC_0101]
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+"Service"="videX32"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1106&DEV_0591&CC_0101]
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+"Service"="videX32"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1106&DEV_3149&CC_0101]
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+"Service"="videX32"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1106&DEV_3164&CC_0101]
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+"Service"="videX32"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1106&DEV_3349&CC_0101]
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+"Service"="videX32"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1106&DEV_5287&CC_0101]
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+"Service"="videX32"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1106&DEV_5324&CC_0101]
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+"Service"="videX32"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1106&DEV_5337&CC_0101]
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+"Service"="videX32"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1106&DEV_5372&CC_0101]
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+"Service"="videX32"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1106&DEV_C409&CC_0101]
+"ClassGUID"="{4D36E96A-E325-11CE-BFC1-08002BE10318}"
+"Service"="videX32"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\videX32]
+"ErrorControl"=dword:00000001
+"Start"=dword:00000000
+"Type"=dword:00000001
+"Group"="System Bus Extender"
+"ImagePath"=hex(2):53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,44,00,\
+  52,00,49,00,56,00,45,00,52,00,53,00,5c,00,76,00,69,00,64,00,65,00,58,00,33,\
+  00,32,00,2e,00,73,00,79,00,73,00,00,00

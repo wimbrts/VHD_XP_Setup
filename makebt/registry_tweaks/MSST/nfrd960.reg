@@ -1,0 +1,53 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1014&DEV_01BD&SUBSYS_01BE1014]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="nfrd960"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1014&DEV_01BD&SUBSYS_01BF1014]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="nfrd960"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1014&DEV_01BD&SUBSYS_02081014]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="nfrd960"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1014&DEV_01BD&SUBSYS_020E1014]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="nfrd960"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1014&DEV_01BD&SUBSYS_02591014]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="nfrd960"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_9005&DEV_0250&SUBSYS_02791014]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="nfrd960"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_9005&DEV_0250&SUBSYS_028C1014]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="nfrd960"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_9005&DEV_0250&SUBSYS_028E1014]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="nfrd960"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\nfrd960]
+"ErrorControl"=dword:00000001
+"Start"=dword:00000003
+"Type"=dword:00000001
+"Group"="SCSI Miniport"
+"DisplayName"="IBM ServeRAID 4M/4L/4Mx/4Lx/5i/6M/6i/7k Device Driver"
+"ImagePath"=hex(2):53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,44,00,\
+  52,00,49,00,56,00,45,00,52,00,53,00,5c,00,6e,00,66,00,72,00,64,00,39,00,36,\
+  00,30,00,2e,00,73,00,79,00,73,00,00,00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\nfrd960\Parameters]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\nfrd960\Parameters\Device]
+"NumberOfRequests"=dword:00000080
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\nfrd960\Parameters\PnpInterface]
+"5"=dword:00000001

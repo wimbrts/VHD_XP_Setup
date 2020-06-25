@@ -1,0 +1,64 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3124&SUBSYS_31241095]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3124"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3124&SUBSYS_312414EB]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3124"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3124&SUBSYS_31241A57]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3124"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3124&SUBSYS_31248086]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3124"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3124&SUBSYS_34428086]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3124"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\SI3124]
+"ErrorControl"=dword:00000001
+"Start"=dword:00000003
+"Type"=dword:00000001
+"Group"="Scsi miniport"
+"DisplayName"="SiI-3124 SATALink Controller"
+"ImagePath"=hex(2):53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,44,00,\
+  52,00,49,00,56,00,45,00,52,00,53,00,5c,00,53,00,49,00,33,00,31,00,32,00,34,\
+  00,2e,00,73,00,79,00,73,00,00,00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\SI3124\ChannelConfigurations]
+"Silicon Image SiI 3124 SATALink Controller (Highly Reliable Systems)"=dword:00001111
+"Silicon Image SiI 3124 SATALink Controller (Seiko Epson)"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\SI3124\Parameters]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\SI3124\Parameters\Device]
+"NumberOfRequests"=dword:0000007c
+"MaximumSGList"=dword:00000021
+"CreateInitiatorLU"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\SI3124\Parameters\PnPInterface]
+"5"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\SI3124\ProblemDevices]
+@=""
+"Maxtor 4D060H3                          DAK05GK0"="MaxMode = UDMA-5"
+"HDS724040KLSA80                         KFAOA32A"="DisableAtaQueueing"
+"HDS722525VLSA80                         V36OA6MA"="DisableAtaQueueing"
+"HDS722516VLSA80                         V34OA6MA"="DisableAtaQueueing"
+"Maxtor 7B250S0                          BANC1B70"="DisableSataQueueing"
+"HTS541060G9SA00                         MB3OC60D"="DisableSataQueueing"
+"HTS541080G9SA00                         MB4OC60D"="DisableSataQueueing"
+"HTS541010G9SA00                         MBZOC60D"="DisableSataQueueing"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\SI3124\SupportedSubsystemIDs]
+"Silicon Image SiI 3124 SATALink Controller"=dword:31241095
+"Silicon Image SiI 3124 SATALink Controller (Intel_2)"=dword:31248086
+"Silicon Image SiI 3124 SATALink Controller (Highly Reliable Systems)"=dword:31241a57
+"Silicon Image SiI 3124 SATALink Controller (Seiko Epson)"=dword:312414eb

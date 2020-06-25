@@ -1,0 +1,164 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1002&DEV_436E&SUBSYS_B0021458]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3112&SUBSYS_01661028]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3112&SUBSYS_31121095]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3112&SUBSYS_311215D9]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3112&SUBSYS_34238086]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3112&SUBSYS_82141033]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3112&SUBSYS_82641033]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3112&SUBSYS_B0021458]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3512&SUBSYS_000E182D]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3512&SUBSYS_001F6409]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3512&SUBSYS_01661028]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3512&SUBSYS_02B71014]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3512&SUBSYS_145A1462]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3512&SUBSYS_35121014]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3512&SUBSYS_35121095]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3512&SUBSYS_3512131F]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3512&SUBSYS_35121A5F]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3512&SUBSYS_81E8104D]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3512&SUBSYS_820B104D]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3512&SUBSYS_82641033]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3512&SUBSYS_9003104D]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3512&SUBSYS_901B104D]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3512&SUBSYS_B0021458]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="SI3112"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\SI3112]
+"ErrorControl"=dword:00000001
+"Start"=dword:00000003
+"Type"=dword:00000001
+"Group"="Scsi miniport"
+"DisplayName"="SiI-3112 SATALink Controller"
+"ImagePath"=hex(2):53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,44,00,\
+  52,00,49,00,56,00,45,00,52,00,53,00,5c,00,53,00,49,00,33,00,31,00,31,00,32,\
+  00,2e,00,73,00,79,00,73,00,00,00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\SI3112\ChannelConfigurations]
+"Silicon Image SiI 3112 SATALink Controller (Sony)"=dword:00000031
+"Silicon Image SiI 3512 SATALink Controller (Sony)"=dword:00000031
+"Silicon Image SiI 3512 SATALink Controller (Sony2)"=dword:00000031
+"Silicon Image SiI 3512 SATALink Controller (System Talks)"=dword:00000011
+"Silicon Image SiI 3512 SATALink Controller (SITECOM)"=dword:00000011
+"Silicon Image SiI 3512 SATALink Controller (Sony4)"=dword:00000010
+"Silicon Image SiI 3512 SATALink Controller (SIIG)"=dword:00000011
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\SI3112\Parameters]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\SI3112\Parameters\Device]
+"NumberOfRequests"=dword:00000040
+"MaximumSGList"=dword:00000021
+"CreateInitiatorLU"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\SI3112\Parameters\PnPInterface]
+"5"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\SI3112\ProblemDevices]
+@=""
+"Maxtor 4D060H3                          DAK05GK0"="MaxMode = UDMA-5"
+"ST320012AS"="Mod15Write"
+"ST330013AS"="Mod15Write"
+"ST340017AS"="Mod15Write"
+"ST360015AS"="Mod15Write"
+"ST380023AS"="Mod15Write"
+"ST3120023AS"="Mod15Write"
+"ST340014ASL"="Mod15Write"
+"ST360014ASL"="Mod15Write"
+"ST380011ASL"="Mod15Write"
+"ST3120022ASL"="Mod15Write"
+"ST3160021ASL"="Mod15Write"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\SI3112\SupportedSubsystemIDs]
+"Silicon Image SiI 3112 SATALink Controller"=dword:31121095
+"Silicon Image SiI 3112 SATALink Controller (Intel)"=dword:34238086
+"Silicon Image SiI 3112 SATALink Controller (Super Micro)"=dword:311215d9
+"Silicon Image SiI 3112 SATALink Controller (Gigabyte)"=dword:b0021458
+"Silicon Image SiI 3112 SATALink Controller (Dell)"=dword:01661028
+"Silicon Image SiI 3112 SATALink Controller (Sony)"=dword:81e8104d
+"Silicon Image SiI 3512 SATALink Controller"=dword:35121095
+"Silicon Image SiI 3512 SATALink Controller (Dell)"=dword:01661028
+"Silicon Image SiI 3512 SATALink Controller (Sony)"=dword:81e8104d
+"Silicon Image SiI 3512 SATALink Controller (IBM)"=dword:35121014
+"Silicon Image SiI 3512 SATALink Controller (IBM2)"=dword:02b71014
+"Silicon Image SiI 3512 SATALink Controller (Gigabyte)"=dword:b0021458
+"Silicon Image SiI 3512 SATALink Controller (Sony2)"=dword:820b104d
+"Silicon Image SiI 3512 SATALink Controller (MSI)"=dword:145a1462
+"Silicon Image SiI 3512 SATALink Controller (LOGITECH)"=dword:001f6409
+"Silicon Image SiI 3512 SATALink Controller (Sony3)"=dword:9003104d
+"Silicon Image SiI 3512 SATALink Controller (System Talks)"=dword:35121a5f
+"Silicon Image SiI 3512 SATALink Controller (SITECOM)"=dword:000e182d
+"Silicon Image SiI 3512 SATALink Controller (Sony4)"=dword:901b104d
+"Silicon Image SiI 3512 SATALink Controller (SIIG)"=dword:3512131f
+"ATI 436E Serial ATA Controller"=dword:436e1002
+"ATI 4379 Serial ATA Controller"=dword:43791002
+"ATI 437A Serial ATA Controller"=dword:437a1002

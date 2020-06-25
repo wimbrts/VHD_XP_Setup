@@ -1,0 +1,28 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_0649&SUBSYS_36491095]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="pnp649r"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\pnp649r]
+"ErrorControl"=dword:00000001
+"Start"=dword:00000003
+"Type"=dword:00000001
+"Group"="Scsi miniport"
+"DisplayName"="CMD IDE Raid Controller"
+"ImagePath"=hex(2):53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,44,00,\
+  52,00,49,00,56,00,45,00,52,00,53,00,5c,00,70,00,6e,00,70,00,36,00,34,00,39,\
+  00,72,00,2e,00,73,00,79,00,73,00,00,00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\pnp649r\Parameters]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\pnp649r\Parameters\PnPInterface]
+"5"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\pnp649r\ProblemDevices]
+@=""
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\pnp649r\SupportedSubsystemIDs]
+"CMD PCI-0649 Ultra100 IDE Raid Controller"=dword:36491095

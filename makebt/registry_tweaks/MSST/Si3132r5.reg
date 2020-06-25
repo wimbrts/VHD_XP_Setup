@@ -1,0 +1,203 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_0011182D]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_056EA0A0]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_0C86105B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_0C88105B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_0C8A105B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_0C8C105B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_0C8E105B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_0CAA105B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_0CAC105B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_0CAE105B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_0D11105B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_105B147B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_105C147B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_105D147B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_105E147B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_1B741019]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_1B751019]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_2A49103C]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_2C0A17F2]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_300A148C]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_53081019]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_71001462]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_71321095]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_71328086]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_71581462]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_71601462]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_72201462]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_8177103c]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_81771043]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_820F1043]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_902C1695]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_B0031458]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3132&SUBSYS_F001147B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3132r5"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3132r5]
+"ErrorControl"=dword:00000001
+"Start"=dword:00000003
+"Type"=dword:00000001
+"Group"="Scsi miniport"
+"DisplayName"="SiI-3132 SoftRaid 5 Controller"
+"ImagePath"=hex(2):53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,44,00,\
+  52,00,49,00,56,00,45,00,52,00,53,00,5c,00,53,00,69,00,33,00,31,00,33,00,32,\
+  00,72,00,35,00,2e,00,73,00,79,00,73,00,00,00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3132r5\ChannelConfigurations]
+"Silicon Image SiI 3132 SoftRaid 5 Controller"=dword:00000001
+"Silicon Image SiI 3132 SoftRaid 5 Controller (Abit F001)"=dword:00000011
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3132r5\Parameters]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3132r5\Parameters\Device]
+"MaximumSGList"=dword:00000021
+"NumberOfRequests"=dword:0000007c
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3132r5\Parameters\PnPInterface]
+"5"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3132r5\ProblemDevices]
+@=""
+"Maxtor 4D060H3                          DAK05GK0"="MaxMode = UDMA-5"
+"HDS724040KLSA80                         KFAOA32A"="DisableAtaQueueing"
+"HDS722525VLSA80                         V36OA6MA"="DisableAtaQueueing"
+"HDS722516VLSA80                         V34OA6MA"="DisableAtaQueueing"
+"Maxtor 7B250S0                          BANC1B70"="DisableSataQueueing"
+"HTS541060G9SA00                         MB3OC60D"="DisableSataQueueing"
+"HTS541080G9SA00                         MB4OC60D"="DisableSataQueueing"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3132r5\SupportedSubsystemIDs]
+"Silicon Image SiI 3132 SoftRaid 5 Controller"=dword:71321095
+"Silicon Image SiI 3132 SoftRaid 5 Controller (Intel 7132)"=dword:71328086
+"Silicon Image SiI 3132 SoftRaid 5 Controller (ASUS 8177)"=dword:81771043
+"Silicon Image SiI 3132 SoftRaid 5 Controller (ASUS 820F)"=dword:820f1043
+"Silicon Image SiI 3132 SoftRaid 5 Controller (MSI 7100)"=dword:71001462
+"Silicon Image SiI 3132 SoftRaid 5 Controller (MSI 7160)"=dword:71601462
+"Silicon Image SiI 3132 SoftRaid 5 Controller (MSI 7158)"=dword:71581462
+"Silicon Image SiI 3132 SoftRaid 5 Controller (MSI 7220)"=dword:72201462
+"Silicon Image SiI 3132 SoftRaid 5 Controller (Gigabyte B003)"=dword:b0031458
+"Silicon Image SiI 3132 SoftRaid 5 Controller (EPoX 902C)"=dword:902c1695
+"Silicon Image SiI 3132 SoftRaid 5 Controller (Aopen 056E)"=dword:056ea0a0
+"Silicon Image SiI 3132 SoftRaid 5 Controller (Foxconn 0CAA)"=dword:0caa105b
+"Silicon Image SiI 3132 SoftRaid 5 Controller (Foxconn 0CAC)"=dword:0cac105b
+"Silicon Image SiI 3132 SoftRaid 5 Controller (Foxconn 0CAE)"=dword:0cae105b
+"Silicon Image SiI 3132 SoftRaid 5 Controller (Foxconn 0C8E)"=dword:0c8e105b
+"Silicon Image SiI 3132 SoftRaid 5 Controller (Foxconn 0C8C)"=dword:0c8c105b
+"Silicon Image SiI 3132 SoftRaid 5 Controller (Foxconn 0C8A)"=dword:0c8a105b
+"Silicon Image SiI 3132 SoftRaid 5 Controller (Foxconn 0C88)"=dword:0c88105b
+"Silicon Image SiI 3132 SoftRaid 5 Controller (Foxconn 0C86)"=dword:0c86105b
+"Silicon Image SiI 3132 SoftRaid 5 Controller (Foxconn 0D11)"=dword:0d11105b
+"Silicon Image SiI 3132 SoftRaid 5 Controller (ABIT 105B)"=dword:105b147b
+"Silicon Image SiI 3132 SoftRaid 5 Controller (ABIT 105C)"=dword:105c147b
+"Silicon Image SiI 3132 SoftRaid 5 Controller (ABIT 105D)"=dword:105d147b
+"Silicon Image SiI 3132 SoftRaid 5 Controller (ABIT 105E)"=dword:105e147b
+"Silicon Image SiI 3132 SoftRaid 5 Controller (TUL 300A)"=dword:300a148c
+"Silicon Image SiI 3132 SoftRaid 5 Controller (ECS 1B74)"=dword:1b741019
+"Silicon Image SiI 3132 SoftRaid 5 Controller (ECS 1B75)"=dword:1b751019
+"Silicon Image SiI 3132 SoftRaid 5 Controller (ECS 5308)"=dword:53081019
+"Silicon Image SiI 3132 SoftRaid 5 Controller (Albatron PX-975Pro)"=dword:2c0a17f2
+"Silicon Image SiI 3132 SoftRaid 5 Controller (HP 2A49)"=dword:2a49103c
+"Silicon Image SiI 3132 SoftRaid 5 Controller (SITECOM)"=dword:0011182d
+"Silicon Image SiI 3132 SoftRaid 5 Controller (ASUS/HP 8177)"=dword:8177103c
+"Silicon Image SiI 3132 SoftRaid 5 Controller (Abit F001)"=dword:f001147b

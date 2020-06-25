@@ -1,0 +1,28 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1103&DEV_2320]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="rr232x"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1103&DEV_2322]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="rr232x"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\rr232x]
+"ErrorControl"=dword:00000001
+"Start"=dword:00000003
+"Type"=dword:00000001
+"Group"="SCSI Miniport"
+"ImagePath"=hex(2):53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,44,00,\
+  52,00,49,00,56,00,45,00,52,00,53,00,5c,00,72,00,72,00,32,00,33,00,32,00,78,\
+  00,2e,00,73,00,79,00,73,00,00,00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\rr232x\Parameters]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\rr232x\Parameters\Device]
+"NumberOfRequests"=dword:00000040
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\rr232x\Parameters\PnpInterface]
+"5"=dword:00000001

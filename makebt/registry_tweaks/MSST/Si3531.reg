@@ -1,0 +1,134 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3531&SUBSYS_0690107B]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3531"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3531&SUBSYS_11071734]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3531"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3531&SUBSYS_111F1734]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3531"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3531&SUBSYS_14981043]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3531"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3531&SUBSYS_2001103C]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3531"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3531&SUBSYS_2F121509]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3531"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3531&SUBSYS_30D4103C]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3531"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3531&SUBSYS_30DE103C]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3531"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3531&SUBSYS_320A1462]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3531"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3531&SUBSYS_35311095]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3531"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3531&SUBSYS_3FAD1462]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3531"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3531&SUBSYS_408317C0]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3531"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3531&SUBSYS_408517C0]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3531"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3531&SUBSYS_82501043]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3531"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3531&SUBSYS_8958152D]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3531"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_1095&DEV_3531&SUBSYS_90A01019]
+"ClassGUID"="{4D36E97B-E325-11CE-BFC1-08002BE10318}"
+"Service"="Si3531"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3531]
+"ErrorControl"=dword:00000001
+"Start"=dword:00000003
+"Type"=dword:00000001
+"Group"="Scsi miniport"
+"DisplayName"="SiI-3531 SATA Controller"
+"ImagePath"=hex(2):53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,44,00,\
+  52,00,49,00,56,00,45,00,52,00,53,00,5c,00,53,00,69,00,33,00,35,00,33,00,31,\
+  00,2e,00,73,00,79,00,73,00,00,00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3531\ChannelConfigurations]
+"Silicon Image SiI 3531 SATA Controller"=dword:00000001
+"Silicon Image SiI 3531 SATA Controller (ASUS 1498)"=dword:00000001
+"Silicon Image SiI 3531 SATA Controller (ASUS 8250)"=dword:00000001
+"Silicon Image SiI 3531 SATA Controller (MSI 73x0)"=dword:00000001
+"Silicon Image SiI 3531 SATA Controller (Hewlitt Packard 30D4)"=dword:00000001
+"Silicon Image SiI 3531 SATA Controller (ECS/Fujitsu 1107)"=dword:00000001
+"Silicon Image SiI 3531 SATA Controller (ECS/Fujitsu 90A0)"=dword:00000001
+"Silicon Image SiI 3531 SATA Controller (Inventec/HP)"=dword:00000001
+"Silicon Image SiI 3531 SATA Controller (Quanta/Dell)"=dword:00000001
+"Silicon Image SiI 3531 SATA Controller (WISTRON)"=dword:00000001
+"Silicon Image SiI 3531 SATA Controller (WISTRON 107B/0690)"=dword:00000001
+"Silicon Image SiI 3531 SATA Controller (FIC 1734/111F)"=dword:00000001
+"Silicon Image SiI 3531 SATA Controller (FIC 1509/2F12)"=dword:00000001
+"Silicon Image SiI 3531 SATA Controller (MSI/3FAD)"=dword:00000001
+"Silicon Image SiI 3531 SATA Controller (Inventec Corp)"=dword:00000001
+"Silicon Image SiI 3531 SATA Controller  (Wistron/4085)"=dword:00000001
+"Silicon Image SiI 3531 SATA Controller (Arima/HP)"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3531\Parameters]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3531\Parameters\Device]
+"MaximumSGList"=dword:00000021
+"NumberOfRequests"=dword:0000007c
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3531\Parameters\PnPInterface]
+"5"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3531\ProblemDevices]
+@=""
+"Maxtor 4D060H3                          DAK05GK0"="MaxMode = UDMA-5"
+"HDS724040KLSA80                         KFAOA32A"="DisableAtaQueueing"
+"HDS722525VLSA80                         V36OA6MA"="DisableAtaQueueing"
+"HDS722516VLSA80                         V34OA6MA"="DisableAtaQueueing"
+"Maxtor 7B250S0                          BANC1B70"="DisableSataQueueing"
+"HTS541060G9SA00                         MB3OC60D"="DisableSataQueueing"
+"HTS541080G9SA00                         MB4OC60D"="DisableSataQueueing"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\Si3531\SupportedSubsystemIDs]
+"Silicon Image SiI 3531 SATA Controller"=dword:35311095
+"Silicon Image SiI 3531 SATA Controller (ASUS 1498)"=dword:14981043
+"Silicon Image SiI 3531 SATA Controller (ASUS 8250)"=dword:82501043
+"Silicon Image SiI 3531 SATA Controller (MSI 73x0)"=dword:320a1462
+"Silicon Image SiI 3531 SATA Controller (Hewlitt Packard 30D4)"=dword:30d4103c
+"Silicon Image SiI 3531 SATA Controller (ECS/Fujitsu-Siemens 1107)"=dword:11071734
+"Silicon Image SiI 3531 SATA Controller (ECS/Fujitsu-Siemens 90A0)"=dword:90a01019
+"Silicon Image SiI 3531 SATA Controller (Inventec/HP)"=dword:30d4103c
+"Silicon Image SiI 3531 SATA Controller (Quanta/Dell)"=dword:8958152d
+"Silicon Image SiI 3531 SATA Controller (WISTRON)"=dword:408317c0
+"Silicon Image SiI 3531 SATA Controller (WISTRON 107B/0690)"=dword:0690107b
+"Silicon Image SiI 3531 SATA Controller (FIC 1734/111F)"=dword:111f1734
+"Silicon Image SiI 3531 SATA Controller (FIC 1509/2F12)"=dword:2f121509
+"Silicon Image SiI 3531 SATA Controller (MSI/3FAD)"=dword:3fad1462
+"Silicon Image SiI 3531 SATA Controller (Inventec Corp)"=dword:30de103c
+"Silicon Image SiI 3531 SATA Controller (Wistron/4085)"=dword:408517c0
+"Silicon Image SiI 3531 SATA Controller (Arima/HP)"=dword:2001103c

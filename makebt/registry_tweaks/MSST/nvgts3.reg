@@ -1,0 +1,54 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_10DE&DEV_0266&CC_0101]
+"ClassGUID"="{4d36e96a-e325-11ce-bfc1-08002be10318}"
+"Service"="nvgts3"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_10DE&DEV_0267&CC_0101]
+"ClassGUID"="{4d36e96a-e325-11ce-bfc1-08002be10318}"
+"Service"="nvgts3"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_10DE&DEV_037F&CC_0101]
+"ClassGUID"="{4d36e96a-e325-11ce-bfc1-08002be10318}"
+"Service"="nvgts3"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_10DE&DEV_03F6&CC_0101]
+"ClassGUID"="{4d36e96a-e325-11ce-bfc1-08002be10318}"
+"Service"="nvgts3"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_10DE&DEV_07F4&CC_0106]
+"ClassGUID"="{4d36e96a-e325-11ce-bfc1-08002be10318}"
+"Service"="nvgts3"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_10DE&DEV_0AB8&CC_0106]
+"ClassGUID"="{4d36e96a-e325-11ce-bfc1-08002be10318}"
+"Service"="nvgts3"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_10DE&DEV_0AB9&CC_0106]
+"ClassGUID"="{4d36e96a-e325-11ce-bfc1-08002be10318}"
+"Service"="nvgts3"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Control\CriticalDeviceDatabase\PCI#VEN_10DE&DEV_0AD4&CC_0106]
+"ClassGUID"="{4d36e96a-e325-11ce-bfc1-08002be10318}"
+"Service"="nvgts3"
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services]
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\nvgts3]
+"ErrorControl"=dword:00000003
+"Start"=dword:00000003
+"Type"=dword:00000001
+"Group"="SCSI Miniport"
+"ImagePath"=hex(2):53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,44,00,\
+  52,00,49,00,56,00,45,00,52,00,53,00,5c,00,6e,00,76,00,67,00,74,00,73,00,33,\
+  00,2e,00,73,00,79,00,73,00,00,00
+"DisableFilterCache"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\nvgts3\Parameters]
+"BusType"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\nvgts3\Parameters\Device]
+"EnableQueryAccessAlignment"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\systemdst\ControlSet001\Services\nvgts3\Parameters\PnpInterface]
+"5"=dword:00000001
