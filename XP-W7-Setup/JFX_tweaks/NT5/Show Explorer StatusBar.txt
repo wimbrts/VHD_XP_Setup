@@ -1,5 +1,0 @@
-REGEDIT4
-
-[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
-"StatusBarOther"=dword:00000001
-"StatusBarWeb"=dword:00000001

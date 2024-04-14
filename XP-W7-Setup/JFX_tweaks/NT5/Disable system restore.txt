@@ -1,4 +1,0 @@
-REGEDIT4
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\sr]
-"Start"=dword:00000004
